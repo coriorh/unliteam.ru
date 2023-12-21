@@ -1,0 +1,122 @@
+﻿<!--
+
+
+
+
+|\  \|\  \    |\   ___  \    |\  \         |\  \    |\___   ___\ |\  ___ \     |\   __  \    |\   _ \  _   \    
+\ \  \\\  \   \ \  \\ \  \   \ \  \        \ \  \   \|___ \  \_| \ \   __/|    \ \  \|\  \   \ \  \\\__\ \  \   
+ \ \  \\\  \   \ \  \\ \  \   \ \  \        \ \  \       \ \  \   \ \  \_|/__   \ \   __  \   \ \  \\|__| \  \  
+  \ \  \\\  \   \ \  \\ \  \   \ \  \____    \ \  \       \ \  \   \ \  \_|\ \   \ \  \ \  \   \ \  \    \ \  \ 
+   \ \_______\   \ \__\\ \__\   \ \_______\   \ \__\       \ \__\   \ \_______\   \ \__\ \__\   \ \__\    \ \__\
+    \|_______|    \|__| \|__|    \|_______|    \|__|        \|__|    \|_______|    \|__|\|__|    \|__|     \|__|
+
+
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>loadscreen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="inc/icons/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="inc/css/style.css">
+  <link rel="stylesheet" type="text/css" href="inc/themes/b/style.css">
+  <link rel="stylesheet" href="inc/css/font-awesome.min.css">
+
+  <script src="inc/js/jquery.js" type="text/javascript"></script>
+
+  <style>
+    #background1,
+    #background2,
+    #background3 {}
+    
+    #background3 {}
+  </style>
+  <style>
+    .section {
+      background-color: rgba(255, 255, 255, .2);
+      box-shadow: 1px 1px 8px #000;
+    }
+    
+    .header {
+      background-color: rgba(255, 255, 255, .1);
+    }
+    
+    .cbox table tr td:first-child {
+      border-color: rgba(255, 255, 255, .4);
+    }
+    
+    @media only screen and (max-width:85.375em) {
+      .container {
+        height: 720px;
+        width: 800px;
+      }
+      .bot {
+        min-height: 200px;
+      }
+      h1 {
+        font-size: 35px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      .otherinfo,
+      .about p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="background1"></div>
+  <div id="background2"></div>
+  <div id="background3"></div>
+
+  <div class="container">
+    <div class="topsection">
+      <center>
+        <h1>🔗 OpT / G&box</h1>
+        <h2>The one server that strives to provide complete freedom for all players on our server</h2>
+
+        <div class="about">
+          <p>If it's your first time joining please be patient as it may take a while downloading everything, but this will only happen once and next time you can join straight away!</p>
+        </div>
+
+        <p class="otherinfo"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp; 193.37.71.116:9999 &nbsp;&middot;&nbsp;
+          <i class="fa fa-microphone" aria-hidden="true"></i>&nbsp; discord.gg/tnYEfSD2Us</p>
+      </center>
+    </div>
+
+    <audio id="audio" style="position: fixed; left: -1000px; top: -1000px;" controls="" autoplay="">
+      <source type="audio/ogg">
+    </audio>
+    
+    <script type="text/javascript">
+      var index = 0;
+      var imagesArray = ["bg0.jpg"];
+      var background1 = $("#background1");
+      var background2 = $("#background2");
+      background2.css("background", "url('inc/bg/" + imagesArray[index] + "') no-repeat bottom center fixed");
+      background2.css("background-size", "cover");
+      setInterval(changeImage, 7000);
+
+      function changeImage() {
+        background2.css("background", "url('inc/bg/" + imagesArray[index] + "') no-repeat bottom center fixed");
+        background2.css("background-size", "cover");
+        background1.hide();
+        index++;
+        if (index >= imagesArray.length) {
+          index = 0;
+        }
+        background1.css("background", "url('inc/bg/" + imagesArray[index] + "') no-repeat bottom center fixed");
+        background1.css("background-size", "cover");
+        background1.fadeIn();
+      }
+    </script>
+</body>
+
+</html>

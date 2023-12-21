@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <link rel="shortcut icon" href="assets/icon/favicon.png" type="image/x-icon">
+  <title>О нас</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2b2b2b">
+  <meta name="description" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://unliteam.ru/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,200;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      transition: all .1.5s ease-in-out;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgb(64, 63, 63);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #c9c9c9;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 0.2rem;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 350;
+      color: #fff;
+      margin: 0;
+      background-color: #0f0f0f;
+      overflow-x: hidden;
+      height: 100%;
+    }
+    
+    .indent {
+      margin-bottom: 100px;
+    }
+    
+    .container {
+      max-width: 1784px;
+      margin: auto;
+      padding: 0 32px;
+    }
+    
+    .navigation {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width:99.8%; 
+      z-index: 1000000;
+      background-color: rgba(0, 0, 0, 0.10);
+      padding: 15px 0;
+      pointer-events: none;
+    }
+    
+    .header {
+      position: relative;
+      -webkit-background-size: cover;
+      background-size: cover;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .header .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .nav__item {
+      display: inline-block;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    
+    .nav-burger {
+      display: none;
+      width: 25px;
+      height: 23px;
+      margin-left: 0;
+      z-index: 101;
+    }
+    
+    .nav-burger__checkbox {
+      display: none;
+    }
+    
+    .navigation .container .col * {
+      pointer-events: auto;
+    }
+    
+    .navigation ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    
+    .navigation a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .navigation a:hover {
+      border-bottom: 1px solid #fff;
+    }
+    
+    .navigation ul li:not(:first-of-type):before {
+      content: "| ";
+      color: #fff !important;
+    }
+    
+    .footer {
+      background-color: rgba(8, 8, 8, 0.51);
+      padding: 16px 0;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .footer .container {
+      font-size: 14px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    
+    .footer .container .col {
+      text-align: center;
+      width: 25%;
+      margin: auto;
+    }
+    
+    .start {
+      position: absolute;
+      margin-left: 25%;
+      margin-right: 25%;
+      font-size: 19px;
+      font-weight: 350;
+    }
+    
+    .conta {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 350;
+      font-size: 28px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    
+    .line {
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
+    
+    .istory {
+      margin-left: 10.5%;
+      margin-right: 10.5%;
+      font-size: 15.5px;
+      font-weight: 200;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .vl {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+    }
+    
+    .indent {
+      margin-bottom: 6000px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="container">
+      <div class="col">
+        <div class="gamburgers">
+          <input class="nav-burger__checkbox" type="checkbox" id="burger">
+          <label class="nav-burger"></label>
+          <ul class="nav">
+            <li class="nav__item"><a href="https://unliteam.ru/">главная</a></li>
+            <li class="nav__item"><a href="">новости</a></li>
+            <li class="nav__item"><a href="rules.html">правила</a></li>
+            <li class="nav__item"><a href="https://steamcommunity.com/id/scientist_02/myworkshopfiles/">мастерская</a></li>
+            <li class="nav__item"><a href="">о нас</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section style="
+background-image: url(assets/img/bg-about.webp); 
+padding-top: 120px; 
+padding-bottom: 40px; 
+background-size: cover; 
+background-position-x : 50%; 
+background-position-y : 32%;
+">
+    <div class="conta">
+      О нас
+      <p>Мы та самая неотъемлемая часть сообщества Garry's Mod пытающая создавать качественные продукты для огромного количества игроков по всему миру.
+        <p>
+    </div>
+    <div class="line">
+      <hr align="center" width="200px" color="white" size="2px">
+    </div>
+    <div class="start">
+      <p>
+        <center>Наш проект появился с задачей создать что-то своё, уникальное. Мы хотели реализовать свои идеи, своё виденье. Что-то такое, что можно назвать целым миром. Мир, в котором каждый игрок мог бы найти свое место, свою роль, свою историю.</p>
+      <div class="istory">
+        <div class="vl">
+          2020 <br>- Поиск себя.
+          <br>На тот момент нас было три человека. <br>От каждого был вложен огромный вклад. Тогда мы и получили своё первое комьюнити. <br>На полумертвом режиме мы смогли найти жизнь. Тогда мы и утвердили, чем будем заниматься в ближайшей перспективе.
+          <br>
+          <br> 2021 <br>- Откровения.
+          <br>К тому времени наш состав успел несколько раз измениться из-за жизненных обстоятельств. Но к счастью, нам всегда попадались люди, умеющие думать с полной ответственностью и пониманием результата своих действий. Нам оставалось лишь свою работу, несмотря на все проблемы и разногласия.
+          <br>
+          <br> 2022 <br>- Год «фоновой разработки».
+          <br> Разумеется, мы продолжали работу над многими режимами. <br>За это время мы приняли ряд решений, <br>которые бы решительно реформировали бы наш проект.
+          <br>
+          <br> 2023<br>- Год перемен или начала новой жизни.
+          <br> Уже весной мы анонсировали парочку старых проектов. <br>А летом успешно открылись.<br>Сервера же работают и по сей день!
+        </div>
+      </div>
+      <p>
+        <center>Мы работали долго и упорно. Мы сталкивались с трудностями и проблемами. Мы учились на своих ошибках и исправляли их. Мы совершенствовали наш проект.</p>
+
+      <p>
+        <center>И поэтому мы пришли к тому, что имеем на сегодняшний день. Опыт, свою философию к разработке и самое важное - индивидуальность. Мы создаём ту атмосферу, которую не олицетворить в других проектах.
+          <br>Этим мы и отличаемся от остальных.</p>
+    </div>
+    <div class="indent"></div>
+</body>
+</html>
